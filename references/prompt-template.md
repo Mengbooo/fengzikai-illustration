@@ -1,23 +1,25 @@
 # 生图提示词模板
 
-核心原则：**提示词越短越好**。长提示词会让 AI 过度渲染，画出一张"太像样"的画。丰子恺只需要一句话说清楚。
+**最关键的规则：这是墨笔画，不是彩色画。只有黑色墨、灰色墨、纸的暖白。没有其他颜色。**
 
 ---
 
 ## 淡彩模式
 
 ```text
-A simple, naive Chinese ink brush drawing in the style of FENG ZIKAI (丰子恺). It should look like a child drew it with a brush — clumsy, sincere, unpolished.
+BLACK INK DRAWING on warm paper, in the naive style of FENG ZIKAI. This is NOT a colorful illustration. The entire drawing uses ONLY black ink and grey ink wash. No warm colors, no peach, no beige tones in the artwork itself. The paper is warm off-white — that is the ONLY warmth in the image.
 
-The drawing has only a few brush strokes total. Wobbly, uneven lines. A figure drawn with 4-6 strokes: a rough circle head, a curved body line, two stick legs, one or two arm lines. No facial features. Proportions are slightly off — that's good.
+Drawn like a child with a brush: clumsy wobbly lines, simple shapes. A figure made of 4-6 strokes (circle head, curved body, stick limbs). No face. Proportions slightly wrong — good.
 
-Only one thing is happening in the scene: {一句话场景，如 "a person sitting under a tree reading"}
+Scene: {一句话，如 a person sitting under a tree reading}
 
-Warm off-white paper background, not pure white. Lots of empty space — over half the canvas is blank.
+The drawing has very few elements. 50%+ of the canvas is empty paper. 
 
-Barely any color — just black ink with maybe ONE pale wash of {淡赭石 或 花青} in one small area. Hand-brushed calligraphy in the corner: {题字}. The writing is casual, uneven — like a child's handwriting. One small red seal stamp.
+Color rule — CRITICAL: the ENTIRE image uses black ink (for lines), grey ink wash (for one or two light areas), and warm paper color (#F0E8D8). Optionally ONE tiny touch of pale color in one spot — and ONLY if the user explicitly wants color mode. Otherwise: black, grey, paper. One small red seal stamp.
 
-DO NOT: detailed brushwork, controlled lines, complex composition, multiple objects, rich colors, facial features, professional calligraphy, filled canvas.
+Hand-brushed calligraphy: {题字}. Uneven, childlike handwriting, slightly tilted.
+
+DO NOT: colorful illustration, warm peach tones, beige washes, multiple colors, gradient backgrounds, detailed brushwork, facial features, complex composition, filled canvas, professional calligraphy, polished lines.
 ```
 
 ---
@@ -25,30 +27,25 @@ DO NOT: detailed brushwork, controlled lines, complex composition, multiple obje
 ## 纯黑白模式
 
 ```text
-A simple, naive Chinese ink brush drawing in the style of FENG ZIKAI (丰子恺). It should look like a child drew it — clumsy, sincere, black ink only.
+PURE BLACK INK DRAWING on warm paper, naive Feng Zikai style. ONLY black ink, grey ink wash, and paper color. NO color of any kind — no warm washes, no peach, no beige, no blue, no green. One small red seal stamp is the only exception.
 
-Only a few brush strokes total. Wobbly, uneven lines. A figure with 4-6 strokes: rough circle head, curved body, stick legs, arm lines. No facial features. Slightly wrong proportions.
+Clumsy childlike brush strokes. Simple shapes. A figure: 4-6 strokes, no face. 
 
-Only one thing happening: {一句话场景}
+Scene: {一句话}
 
-Warm off-white paper. Over half the canvas is empty. Pure black ink with one pale grey wash for ground or distant elements. No color at all — except one small red seal stamp. Hand-brushed uneven calligraphy: {题字}.
+Over half the canvas is empty paper. Very few elements. 
 
-DO NOT: color, detailed brushwork, multiple objects, complex composition, facial features, professional calligraphy, filled canvas.
+Hand-brushed calligraphy: {题字}. Uneven, childlike. One red seal.
+
+DO NOT: any color except the seal, warm-toned illustration, complex composition, professional lines, facial features.
 ```
 
 ---
 
 ## 提示词组装清单
 
-生成前只填这些，不要加更多：
+只填这三样，不要加任何东西：
 
-- [ ] 一句话场景（10 字以内，如"树下看书""两人喝茶""小孩追蝴蝶"）
+- [ ] 一句话场景（10 字内）
 - [ ] 题字（3-8 字）
 - [ ] 淡彩还是纯黑白？
-- [ ] 如果淡彩：唯一一抹颜色是什么？（淡赭石/花青，只选一个）
-
-**不要填的**：
-- ❌ 不要详细描述人物姿态（"微微侧身""手指微曲"——太细）
-- ❌ 不要列举自然元素（"柳枝、燕子、远山、桃花"——太多）
-- ❌ 不要描述光影和氛围
-- ❌ 不要重复风格约束（负面约束在模板里已经够了）
