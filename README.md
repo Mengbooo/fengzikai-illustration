@@ -1,5 +1,7 @@
 # 丰子恺水墨插图 / Feng Zikai Ink-Wash Illustration
 
+[![skills.sh](https://skills.sh/b/Mengbooo/fengzikai-illustration)](https://skills.sh/Mengbooo/fengzikai-illustration)
+
 > 把中文内容里的情绪、观点和哲理，变成一张有温度的丰子恺水墨风格配图。
 >
 > 竖版 3:4 配图 | 水墨淡彩 | 简笔人物 | 手写题字 | 兼容 Claude Code / Codex / Hermes
@@ -51,7 +53,12 @@
 
 ### 安装方式
 
-**方式一：直接克隆**
+**方式一：npx skills（推荐）**
+```bash
+npx skills add Mengbooo/fengzikai-illustration
+```
+
+**方式二：Git 克隆**
 ```bash
 # 在你的 Agent skills 目录下克隆
 cd ~/.claude/skills/     # 或 ~/.codex/skills/ 或 ~/.hermes/skills/

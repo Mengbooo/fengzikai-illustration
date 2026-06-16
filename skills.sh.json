@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Illustration",
+      "description": "Chinese ink-wash illustration in Feng Zikai style.",
+      "skills": ["fengzikai-illustration"]
+    }
+  ]
+}
