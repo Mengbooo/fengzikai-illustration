@@ -2,9 +2,9 @@
 
 [![skills.sh](https://skills.sh/b/Mengbooo/fengzikai-illustration)](https://skills.sh/Mengbooo/fengzikai-illustration)
 
-> 小孩用毛笔画的黑白墨水画。只有黑墨、灰墨、暖白纸、一个红印章。
+> 小孩用毛笔画完 6 笔就走了。极少的笔触、大片的空白、天真笨拙。
 >
-> 天真、笨拙、像小孩画的。
+> 一棵树 = 两笔。一个人 = 六笔。支持淡彩和纯黑白。
 
 ---
 
@@ -20,22 +20,17 @@ npx skills add Mengbooo/fengzikai-illustration
 
 ## 使用
 
-"丰子恺风格，给这段文字配图"
+触发词：丰子恺、水墨配图、黑白水墨。"丰子恺风格，给这段文字配图"
 
-Skill 自动：找画面瞬间 → 出 shot list → 生成 → QA 检查。
+两种模式：
+- **淡彩（默认）**：黑墨为主，只有一处极淡色
+- **纯黑白**：只有黑墨、灰墨、纸色、印章
 
 ---
 
 ## 文件
 
 ```
-SKILL.md
-references/
-  style-dna.md         # 风格DNA
-  prompt-template.md   # 生图模板
-  story-extraction.md   # 故事提炼
-  master-selection.md   # 母版系统
-  qa-checklist.md       # QA
+SKILL.md  references/  assets/
 ```
-
 MIT
