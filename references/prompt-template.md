@@ -1,23 +1,21 @@
 # 生图提示词模板
 
-**核心：笔触越少越好。画面里能认出的"笔画"应该数得过来。**
+**AI 最大的问题是把每样东西都"画完"——每片叶子、每块砖、每道衣纹。丰子恺不会。他画到意思到了就停。**
 
 ---
 
 ## 淡彩模式
 
 ```text
-BLACK INK childlike drawing on warm paper. Feng Zikai style. Monochrome ink with ONE tiny pale color wash in one spot.
+A quick ink sketch on warm paper, not a finished illustration. Feng Zikai style.
 
-EXTREMELY FEW brush strokes. A child drew this quickly and stopped. A figure = circle head + one curved stroke body + two stick legs + two stick arms. That's it. A tree = one vertical line + one rough circle. A table = a rectangle outline. No shading, no texture, no detail.
+The drawing looks like it was done in 30 seconds. Outlines only — do not fill, shade, or texture anything. Figures are simple gestures: a circle for a head, a few quick lines for body and limbs. Background is mostly blank paper. If something doesn't need to be drawn to convey the idea, leave it out.
 
-Scene: {一句话}
+The entire sketch uses black ink with maybe one light wash of pale umber in a single spot. Paper color shows through everywhere. One red seal. Calligraphy: {题字}, brushed quickly, uneven.
 
-The canvas is mostly empty. Only 3-5 recognizable things total. Lots of blank warm paper (#F0E8D8).
+Scene: {一句话场景}
 
-Hand-brushed calligraphy: {题字}. Childlike, uneven handwriting. One small red seal.
-
-CRITICAL: This must look sparse and unfinished. If it looks like a complete illustration with filled background and detailed elements, it failed. A child drew 6 things and walked away.
+DO NOT: detailed rendering, filled shapes, shading, texture, complete backgrounds, multiple washes, polished look. This should feel unfinished and spontaneous.
 ```
 
 ---
@@ -25,17 +23,15 @@ CRITICAL: This must look sparse and unfinished. If it looks like a complete illu
 ## 纯黑白模式
 
 ```text
-BLACK INK childlike drawing on warm paper. Feng Zikai style. PURE monochrome — only black ink, grey wash, paper color, one red seal.
+A quick black ink sketch on warm paper, not a finished illustration. Feng Zikai style.
 
-EXTREMELY FEW brush strokes. A child drew this quickly. Figure: circle head, curved body stroke, stick limbs. That's it. Tree: one line + one circle. No detail, no texture.
+Done in 30 seconds. Outlines only — no fill, no shade, no texture. Figures: a circle head, quick body lines. Background is mostly blank. Leave out anything unnecessary.
 
-Scene: {一句话}
+Pure black ink with one light grey wash for ground or distance. Paper shows through. One red seal. Quick, uneven calligraphy: {题字}.
 
-Only 3-5 things visible. Canvas is mostly empty warm paper (#F0E8D8).
+Scene: {一句话场景}
 
-Hand-brushed calligraphy: {题字}. Childlike, uneven. One red seal.
-
-If the image looks polished, detailed, or complete, it failed. It should look like a quick sketch.
+DO NOT: detailed rendering, filled shapes, shading, texture. Unfinished and spontaneous.
 ```
 
 ---
